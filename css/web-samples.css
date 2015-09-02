@@ -6,28 +6,46 @@ html,body {
 	font-family:verdana,arial,sans-serif;
 	text-align:center;
 	margin:0;
-	padding:0
+	padding:0;
+    overflow: hidden;
 }
 
 a {
+	-moz-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	-webkit-transition:all 200ms ease-in;
+	transition:all 200ms ease-in;
 	text-decoration:none!important;
-	color:#222
 }
 
 a:hover {
     cursor: pointer;
-	text-decoration:none
 }
 
 .web-menu {
     background-color: #000;
-    height: 100vh;
+    height: 100%;
     cursor: default;
 }
 
-.inner-html {
-    height: 100%;    
+.overlay-nav a:hover {
+	color:#BDBDBD;
+}
+
+.overlay-nav {
+    height: 50px;
+    padding-top: 15px;
+    position: relative;
+    z-index: 6000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#222));
+    background: -webkit-linear-gradient(#111, #222);
+    background: linear-gradient(#111, #222);
+    border-bottom: 1px solid #3d3d3d;
+}
+
+iframe {
     width: 100%;
+    height: 100vh;
 }
 
 .menu-icon img {
@@ -73,7 +91,6 @@ a:hover {
 
 .pt-page {
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -151,18 +168,8 @@ a:hover {
 
 /*main page button*/
 
-a {
-	text-decoration:none;
-	-moz-transition:all 200ms ease-in;
-	-o-transition:all 200ms ease-in;
-	-webkit-transition:all 200ms ease-in;
-	transition:all 200ms ease-in
-}
-
 .welcome-button a:hover {
 	color:#BDBDBD!important;
-    cursor: pointer;
-	text-decoration:none
 }
 
 .lin-t {
